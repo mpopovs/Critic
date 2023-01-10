@@ -8,8 +8,8 @@ public class handPush : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
- 
-    void Update()
+
+    void FixedUpdate()
     {
         if(Input.GetMouseButtonDown(0))
         {
