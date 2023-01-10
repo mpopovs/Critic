@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 7233046296238037943}
   - component: {fileID: 4865020100193415037}
   - component: {fileID: 2483941809988392094}
+  - component: {fileID: 2991963762634787947}
   - component: {fileID: -325651082341394317}
   - component: {fileID: 8054794966861570405}
   m_Layer: 0
   m_Name: dicuss
-  m_TagString: Untagged
+  m_TagString: dicuss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +103,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2991963762634787947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6378498337238568616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cdea1d2e6c86a4abfb4e7829dd8cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManeger: {fileID: 0}
 --- !u!114 &-325651082341394317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOptions:
-    triggerType: 1
+    triggerType: 0
     minimumCollisionForce: 0
     filterCollisionsByTag: 1
     triggerAllowedTags:

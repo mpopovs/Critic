@@ -27,5 +27,8 @@ public class PlayerController : MonoBehaviour
         // Rotates the car based on horizontal input
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
         
+        if(GameManager.instance.gameOver == true) {
+            speed = 0f;
+        }
     }
 }
