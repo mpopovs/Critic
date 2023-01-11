@@ -4,7 +4,7 @@
 In referring to the recent events in Daugavpils Marka Rothko Art Center, artworks were removed from the exhibition because some people (not related to art) found their content vulgar.
 </p>
 <p>
-The main idea is that you need to smash as many "Dicksus Arrogance"   as you can in one minute.
+The game's main idea is that you need to smash as many "Dicksus Arrogance"   as you can in one minute and save the city from vulgarity.
 </p>
 
 <a href="https://streamable.com/ny7kse">Watch video</a>
