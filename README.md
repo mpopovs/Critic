@@ -11,4 +11,10 @@ The game's main idea is that you need to smash as many "Dicksus Arrogance"   as 
 </br>
 <a href="https://github.com/mpopovs/Critic/releases/tag/v1.0.0">Download</a>
 
+<h1>Instruction</h1>
+  <p>
+  Use arrow keys or WASD to move 
+  ESC to exit game
+  </p>
+
 <p> The game was created as part of the Unity course in the Vidzeme University Virtual Reality masters program. </p>
