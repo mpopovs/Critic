@@ -6,12 +6,9 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {   
     public static GameManager instance;
-    public GameObject[] buildingPrefabs;
-    private float spawnRangeX = 450;
-
-    private float spawnRangeZ = 450;
+  
      int score = 0;
-     int highscore = 0;
+    // int highscore = 0;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI gameOwerText;
@@ -26,11 +23,11 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       Invoke("SpawnRandomArt", 0);
+      
        scoreText.text = "Score: " + score.ToString();
        restartButton.SetActive(false);
        
-      //  UpdateScore(0);
+      
     }
 
     public void AddPoints()
@@ -71,36 +68,14 @@ public class GameManager : MonoBehaviour
         } 
 
         DispleyTime(timeValue);
+        //exit game by press Esc button
+          if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
   
 
-    // public void UpdateScore(int scoreToAdd)
-    //  {
-    //      score += scoreToAdd;
-    //      scoreText.text = "Score: " + score; 
-    // }
+   
 
-    void SpawnRandomArt()
-    {
-        // Create random animals from our array
-         int buildingIndexOne = Random.Range(0, buildingPrefabs.Length);
-         int buildingIndexTwo = Random.Range(0, buildingPrefabs.Length);
-         int buildingIndexThree = Random.Range(0, buildingPrefabs.Length);
-
-
-            for (var i = 0; i < 100; i++){
-            Vector3 spawnPosTop = new Vector3(Random.Range(-spawnRangeX,spawnRangeX),0,Random.Range(-spawnRangeX,spawnRangeX));
-                
-            Instantiate(buildingPrefabs[buildingIndexOne], spawnPosTop, buildingPrefabs[buildingIndexOne].transform.rotation);
-            }
-
-            for (var i = 0; i < 50; i++){
-            Vector3 spawnPosLeft = new Vector3(Random.Range(-spawnRangeX,spawnRangeX), 0, Random.Range(-spawnRangeZ,spawnRangeZ));
-            Instantiate(buildingPrefabs[buildingIndexTwo], spawnPosLeft, Quaternion.Euler(0, 90, 0));
-            }
-            for (var i = 0; i < 30; i++){
-            Vector3 spawnPosRight = new Vector3(Random.Range(-spawnRangeX,spawnRangeX), 0, Random.Range(-spawnRangeZ,spawnRangeZ));
-            Instantiate(buildingPrefabs[buildingIndexThree], spawnPosRight, Quaternion.Euler(0, -90, 0));
-            }
-    }
 }
