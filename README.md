@@ -8,5 +8,7 @@ The game's main idea is that you need to smash as many "Dicksus Arrogance"   as 
 </p>
 
 <a href="https://streamable.com/ny7kse">Watch video</a>
+</br>
+<a href="https://github.com/mpopovs/Critic/releases/tag/v1.0.0">Download</a>
 
 <p> The game was created as part of the Unity course in the Vidzeme University Virtual Reality masters program. </p>
