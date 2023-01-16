@@ -23,21 +23,28 @@ public class SpawnManeger : MonoBehaviour
          int buildingIndexOne = Random.Range(0, buildingPrefabs.Length);
          int buildingIndexTwo = Random.Range(0, buildingPrefabs.Length);
          int buildingIndexThree = Random.Range(0, buildingPrefabs.Length);
+          int buildingIndexFour = Random.Range(0, buildingPrefabs.Length);
 
 
             for (var i = 0; i < 100; i++){
-            Vector3 spawnPosTop = new Vector3(Random.Range(-spawnRangeX,spawnRangeX),0,Random.Range(-spawnRangeX,spawnRangeX));
+            Vector3 spawnPosTop = new Vector3(Random.Range(-spawnRangeX,spawnRangeX),0,Random.Range(-spawnRangeX,-10));
                 
             Instantiate(buildingPrefabs[buildingIndexOne], spawnPosTop, buildingPrefabs[buildingIndexOne].transform.rotation);
             }
 
             for (var i = 0; i < 50; i++){
-            Vector3 spawnPosLeft = new Vector3(Random.Range(-spawnRangeX,spawnRangeX), 0, Random.Range(-spawnRangeZ,spawnRangeZ));
+            Vector3 spawnPosLeft = new Vector3(Random.Range(-spawnRangeX,spawnRangeX), 0, Random.Range(10,spawnRangeZ));
             Instantiate(buildingPrefabs[buildingIndexTwo], spawnPosLeft, Quaternion.Euler(0, 90, 0));
             }
             for (var i = 0; i < 30; i++){
-            Vector3 spawnPosRight = new Vector3(Random.Range(-spawnRangeX,spawnRangeX), 0, Random.Range(-spawnRangeZ,spawnRangeZ));
+            Vector3 spawnPosRight = new Vector3(Random.Range(-spawnRangeX,spawnRangeX), 0, Random.Range(10,spawnRangeZ));
             Instantiate(buildingPrefabs[buildingIndexThree], spawnPosRight, Quaternion.Euler(0, -90, 0));
+            }
+
+              for (var i = 0; i < 100; i++){
+            Vector3 spawnPosTop = new Vector3(Random.Range(spawnRangeX,-spawnRangeX),0,Random.Range(-spawnRangeX,-10));
+                
+            Instantiate(buildingPrefabs[buildingIndexFour], spawnPosTop, buildingPrefabs[buildingIndexFour].transform.rotation);
             }
     }
 }

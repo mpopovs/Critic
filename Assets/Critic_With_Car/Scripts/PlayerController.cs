@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+   
    // Private variables
     private float speed = 30.0f;
     private float turnSpeed = 60.0f;
@@ -26,9 +27,12 @@ public class PlayerController : MonoBehaviour
         transform.Translate (Vector3.forward * Time.deltaTime * speed * forwardInput);
         // Rotates the car based on horizontal input
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+
+      
         
         if(GameManager.instance.gameOver == true) {
             speed = 0f;
         }
+        
     }
 }

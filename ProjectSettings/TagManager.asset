@@ -9,6 +9,7 @@ TagManager:
   - Floor
   - groun
   - dicuss
+  - building
   layers:
   - Default
   - TransparentFX
